@@ -8,7 +8,7 @@ class PoinCreditUmum extends Model
     protected $table = 'poin_credit_umum';
     
     protected $fillable = [
-        'name','credit'
+        'name','credit', 'type'
     ];
     public function pengabdian()
     {

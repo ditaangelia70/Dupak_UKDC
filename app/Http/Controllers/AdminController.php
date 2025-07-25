@@ -879,6 +879,7 @@ class AdminController extends BaseController
             if($id){
                 if($request->isMethod('post')){
                     $data = $request->all();
+                    // return response()->json($data);
                     // creating the billboard data
                     $kredit_umum = PoinCreditUmum::find($id);
                     if($kredit_umum){

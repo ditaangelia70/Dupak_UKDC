@@ -202,7 +202,7 @@ class Controller extends BaseController
                 $total_poin = $credit_umum_penelitian + $credit_jenis_publikasi->credit + $credit_capaian_publikasi->credit;
 
                 // algoritma bagi hasil
-                $lIndex = 0;
+                $lIndex = 0; //penulis pertama
                 foreach($publikasi_karya[$pk_index]['anggota'] as $i => $a){
                     if(isset($a['user_id']) and $a['user_id'] === $dl['id']){
                         $lIndex = $i;
